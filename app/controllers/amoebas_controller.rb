@@ -5,7 +5,7 @@ class AmoebasController < ApplicationController
 
   def show
     @amoeba = Amoeba.find(params[:id])
-  end
+  en
 
   def new
     @amoeba = Amoeba.new
@@ -21,5 +21,10 @@ class AmoebasController < ApplicationController
 
   def update
     @amoeba = Amoeba.find(params[:id])
+  end
+
+  def destroy
+    @amoeba = Amoeba.find(params[:id])
+    @amoeba.destroy
   end
 end
