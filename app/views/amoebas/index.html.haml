@@ -1,0 +1,15 @@
+%h1 All Amoebas
+%table
+  %tr
+    %th Name
+    %th Act
+    %th Talent
+
+  - @amoebas.each do |amoeba|
+    %tr
+      %td= amoeba.name
+      %td= amoeba.act_id
+      %td= amoeba.talent_id
+
+%br
+= link_to 'New Amoeba', new_amoeba_path
