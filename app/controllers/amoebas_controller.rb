@@ -23,8 +23,10 @@ class AmoebasController < ApplicationController
     @amoeba = Amoeba.find(params[:id])
   end
 
-  def destroy
+  def split
     @amoeba = Amoeba.find(params[:id])
-    @amoeba.destroy
+    if @amoeba.split
+      redirect_to "/amoebas"
+    end
   end
 end
