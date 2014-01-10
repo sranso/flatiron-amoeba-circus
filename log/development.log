@@ -1991,3 +1991,257 @@ Served asset /jquery.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:42:40 -0500
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts" for 127.0.0.1 at 2014-01-10 12:43:15 -0500
+Processing by ActsController#index as HTML
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" [0m
+  Rendered acts/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:15 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:15 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:43:15 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/acts/1" for 127.0.0.1 at 2014-01-10 12:43:16 -0500
+Processing by ActsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAct Load (0.3ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered acts/show.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:43:16 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:16 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:16 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:16 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts" for 127.0.0.1 at 2014-01-10 12:43:17 -0500
+Processing by ActsController#index as HTML
+  [1m[36mAct Load (0.2ms)[0m  [1mSELECT "acts".* FROM "acts" [0m
+  Rendered acts/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:43:17 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:17 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:17 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:17 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts/new" for 127.0.0.1 at 2014-01-10 12:43:18 -0500
+Processing by ActsController#new as HTML
+  Rendered acts/_form.html.haml (3.1ms)
+  Rendered acts/new.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:18 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:18 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:18 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:43:18 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/acts" for 127.0.0.1 at 2014-01-10 12:43:26 -0500
+Processing by ActsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z4U692rh5WC75iKHUEI1/1txJvO8lb05Yn7Kyr8UtdY=", "act"=>{"name"=>"Poppy Seeds and Flowers"}, "commit"=>"Make It"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "acts" ("created_at", "date_time", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 10 Jan 2014 17:43:26 UTC +00:00], ["date_time", nil], ["name", "Poppy Seeds and Flowers"], ["updated_at", Fri, 10 Jan 2014 17:43:26 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/acts/3
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/acts/3" for 127.0.0.1 at 2014-01-10 12:43:26 -0500
+Processing by ActsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered acts/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:43:26 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:26 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:26 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts" for 127.0.0.1 at 2014-01-10 12:43:28 -0500
+Processing by ActsController#index as HTML
+  [1m[35mAct Load (0.2ms)[0m  SELECT "acts".* FROM "acts" 
+  Rendered acts/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:43:28 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:28 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:28 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:28 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts/new" for 127.0.0.1 at 2014-01-10 12:43:55 -0500
+Processing by ActsController#new as HTML
+  Rendered acts/_form.html.haml (4.3ms)
+  Rendered acts/new.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:56 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:56 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:43:56 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:43:56 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/acts" for 127.0.0.1 at 2014-01-10 12:44:14 -0500
+Processing by ActsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z4U692rh5WC75iKHUEI1/1txJvO8lb05Yn7Kyr8UtdY=", "act"=>{"name"=>"Stolen Buildings", "date_time"=>"2015/05/12 11:59pm"}, "commit"=>"Make It"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "acts" ("created_at", "date_time", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Fri, 10 Jan 2014 17:44:14 UTC +00:00], ["date_time", Tue, 12 May 2015 23:59:00 UTC +00:00], ["name", "Stolen Buildings"], ["updated_at", Fri, 10 Jan 2014 17:44:14 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/acts/4
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/acts/4" for 127.0.0.1 at 2014-01-10 12:44:14 -0500
+Processing by ActsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered acts/show.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:44:14 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:44:14 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:44:14 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:44:14 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts/4" for 127.0.0.1 at 2014-01-10 12:44:29 -0500
+Processing by ActsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAct Load (0.2ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered acts/show.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:44:29 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:44:29 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:44:29 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:44:29 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts" for 127.0.0.1 at 2014-01-10 12:44:34 -0500
+Processing by ActsController#index as HTML
+  [1m[35mAct Load (0.2ms)[0m  SELECT "acts".* FROM "acts" 
+  Rendered acts/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:44:34 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:44:34 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:44:34 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:44:34 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
