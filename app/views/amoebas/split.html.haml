@@ -7,10 +7,10 @@
     = baby.name
   %p
     %b Act:
-    = baby.act_id
+    = Act.find(baby.act_id).name
   %p
     %b Talent:
-    = baby.talent_id
+    = Talent.find(baby.talent_id).name
   %p
     %b Generation:
     = baby.gen_num

@@ -17,13 +17,13 @@ Act.create([{name: "The Great Escape", date_time: "2014/12/31 11:59pm"},
   {name: "Taking Toys", date_time: "2016/10/12 8pm"}])
 
 Amoeba.create([{name: "Floo", act_id: 1, talent_id: 2},
-  {name: "Floo", act_id: 1, talent_id: 1},
-  {name: "Floo", act_id: 2, talent_id: 3},
-  {name: "Floo", act_id: 2, talent_id: 4},
-  {name: "Floo", act_id: 2, talent_id: 5},
-  {name: "Floo", act_id: 3, talent_id: 5},
-  {name: "Floo", act_id: 3, talent_id: 4},
-  {name: "Floo", act_id: 3, talent_id: 3},
-  {name: "Floo", act_id: 3, talent_id: 2},
-  {name: "Floo", act_id: 3, talent_id: 1},
-  {name: "Floo", act_id: 1, talent_id: 1}])
+  {name: "PowerP", act_id: 1, talent_id: 1},
+  {name: "TappyTap", act_id: 2, talent_id: 3},
+  {name: "Pitter", act_id: 2, talent_id: 4},
+  {name: "Patter", act_id: 2, talent_id: 5},
+  {name: "Storas", act_id: 3, talent_id: 5},
+  {name: "Solliver", act_id: 3, talent_id: 4},
+  {name: "Bowl", act_id: 3, talent_id: 3},
+  {name: "Billington", act_id: 3, talent_id: 2},
+  {name: "Stall", act_id: 3, talent_id: 1},
+  {name: "KeepMe", act_id: 1, talent_id: 1}])
