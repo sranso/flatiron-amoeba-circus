@@ -1,18 +1,1 @@
-%h1 All Amoebas
-%table
-  %tr
-    %th Name
-    %th Act
-    %th Talent
-    %th Generation
-
-  - @amoebas.each do |amoeba|
-    %tr
-      %td= amoeba.name
-      %td= amoeba.act_id
-      %td= amoeba.talent_id
-      %td= amoeba.generation_num
-      %td= link_to 'Show', amoeba
-      %td= button_to 'Split', "/amoebas/#{amoeba.id}", :method => :split, :data => { :confirm => 'Fo rill?'}
-%br
-= link_to 'New Amoeba', new_amoeba_path
+= link_to("split amoeba #{@amoebas.first.id}", "/amoebas/split/#{@amoebas.first.id}")

@@ -24,9 +24,7 @@ class AmoebasController < ApplicationController
   end
 
   def split
-    @amoeba = Amoeba.find(params[:id])
-    if @amoeba.split
-      redirect_to "/amoebas"
-    end
+    amoeba = Amoeba.find(params[:baby_maker])
+    @split_amoeba = amoeba.split
   end
 end
