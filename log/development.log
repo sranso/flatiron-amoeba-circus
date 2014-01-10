@@ -1468,3 +1468,466 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:27:29 -0500
 Served asset /jquery.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAmoebas (20140110163618)
+Migrating to CreateActs (20140110172912)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "acts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "date_time" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140110172912')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/amoebas" for 127.0.0.1 at 2014-01-10 12:35:09 -0500
+Processing by AmoebasController#index as HTML
+  [1m[36mAmoeba Load (0.1ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" [0m
+  Rendered amoebas/index.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 18ms (Views: 9.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:35:09 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:35:09 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:35:09 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:35:09 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts" for 127.0.0.1 at 2014-01-10 12:35:11 -0500
+
+ActionController::RoutingError (No route matches [GET] "/acts"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/sarahransohoff/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/sarahransohoff/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/sarahransohoff/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/acts" for 127.0.0.1 at 2014-01-10 12:35:29 -0500
+Processing by ActsController#index as HTML
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" 
+  Rendered acts/index.html.haml within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    7:     %th Talent
+    8:     %th Generation
+    9: 
+    10:   - @amoebas.each do |amoeba|
+    11:     %tr
+    12:       %td= amoeba.name
+    13:       %td= amoeba.act_id
+  app/views/acts/index.html.haml:10:in `_app_views_acts_index_html_haml__2625299996400904758_70108312190460'
+
+
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/acts" for 127.0.0.1 at 2014-01-10 12:36:38 -0500
+Processing by ActsController#index as HTML
+  [1m[36mAct Load (0.2ms)[0m  [1mSELECT "acts".* FROM "acts" [0m
+  Rendered acts/index.html.haml within layouts/application (46.2ms)
+Completed 500 Internal Server Error in 49ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4:   %tr
+    5:     %th Name
+    6: 
+    7:   - @amoebas.each do |amoeba|
+    8:     %tr
+    9:       %td= amoeba.name
+    10:       %td= amoeba.act_id
+  app/views/acts/index.html.haml:7:in `_app_views_acts_index_html_haml__2625299996400904758_70108312478820'
+
+
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/acts" for 127.0.0.1 at 2014-01-10 12:36:48 -0500
+Processing by ActsController#index as HTML
+  [1m[35mAct Load (0.2ms)[0m  SELECT "acts".* FROM "acts" 
+  Rendered acts/index.html.haml within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `act_id' for #<Act:0x007f86bd444850>):
+    7:   - @acts.each do |act|
+    8:     %tr
+    9:       %td= act.name
+    10:       %td= act.act_id
+    11:       %td= act.talent_id
+    12:       %td= act.gen_num
+    13:       %td= link_to 'Show', act
+  app/views/acts/index.html.haml:10:in `block in _app_views_acts_index_html_haml__2625299996400904758_70108338894120'
+  app/views/acts/index.html.haml:7:in `each'
+  app/views/acts/index.html.haml:7:in `_app_views_acts_index_html_haml__2625299996400904758_70108338894120'
+
+
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/acts" for 127.0.0.1 at 2014-01-10 12:36:54 -0500
+Processing by ActsController#index as HTML
+  [1m[36mAct Load (0.3ms)[0m  [1mSELECT "acts".* FROM "acts" [0m
+  Rendered acts/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:36:54 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:36:54 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:36:54 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:36:54 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts" for 127.0.0.1 at 2014-01-10 12:37:02 -0500
+Processing by ActsController#index as HTML
+  [1m[35mAct Load (0.2ms)[0m  SELECT "acts".* FROM "acts" 
+  Rendered acts/index.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:37:02 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:37:02 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:37:02 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:37:02 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts" for 127.0.0.1 at 2014-01-10 12:37:08 -0500
+Processing by ActsController#index as HTML
+  [1m[36mAct Load (0.2ms)[0m  [1mSELECT "acts".* FROM "acts" [0m
+  Rendered acts/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:37:08 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:37:08 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:37:08 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:37:08 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts/new" for 127.0.0.1 at 2014-01-10 12:37:11 -0500
+Processing by ActsController#new as HTML
+  Rendered acts/_form.html.haml (4.2ms)
+  Rendered acts/new.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:37:11 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:37:11 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:37:11 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:37:11 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/acts/new" for 127.0.0.1 at 2014-01-10 12:37:26 -0500
+Processing by ActsController#new as HTML
+  Rendered acts/_form.html.haml (1.5ms)
+  Rendered acts/new.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:37:26 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:37:26 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:37:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:37:26 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts/new" for 127.0.0.1 at 2014-01-10 12:37:32 -0500
+Processing by ActsController#new as HTML
+  Rendered acts/_form.html.haml (3.3ms)
+  Rendered acts/new.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:37:32 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:37:32 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:37:32 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:37:32 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts/1" for 127.0.0.1 at 2014-01-10 12:38:03 -0500
+Processing by ActsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAct Load (0.2ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered acts/show.html.haml within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2: 
+    3: %p
+    4:   %b Name:
+    5:   = @Act.name
+    6: %p
+    7:   %b Act:
+    8:   = @Act.act_id
+  app/views/acts/show.html.haml:5:in `_app_views_acts_show_html_haml___4474125925987532207_70108312854960'
+
+
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (46.8ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (55.9ms)
+
+
+Started GET "/acts/1" for 127.0.0.1 at 2014-01-10 12:38:13 -0500
+Processing by ActsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered acts/show.html.haml within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `act_id' for #<Act:0x007f86bd218068>):
+    5:   = @act.name
+    6: %p
+    7:   %b Act:
+    8:   = @act.act_id
+    9: %p
+    10:   %b Talent:
+    11:   = @act.talent_id
+  app/views/acts/show.html.haml:8:in `_app_views_acts_show_html_haml___4474125925987532207_70108338128260'
+
+
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.5ms)
+
+
+Started GET "/acts/1" for 127.0.0.1 at 2014-01-10 12:38:19 -0500
+Processing by ActsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAct Load (0.2ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered acts/show.html.haml within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Acts_path):
+    4:   %b Name:
+    5:   = @act.name
+    6: 
+    7: = link_to 'Back', Acts_path
+  app/views/acts/show.html.haml:7:in `_app_views_acts_show_html_haml___4474125925987532207_70108349396180'
+
+
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/acts/1" for 127.0.0.1 at 2014-01-10 12:38:27 -0500
+Processing by ActsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered acts/show.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:38:27 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:38:27 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:38:27 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:38:27 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts" for 127.0.0.1 at 2014-01-10 12:38:30 -0500
+Processing by ActsController#index as HTML
+  [1m[35mAct Load (0.2ms)[0m  SELECT "acts".* FROM "acts" 
+  Rendered acts/index.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:38:30 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:38:30 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:38:30 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:38:30 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts/new" for 127.0.0.1 at 2014-01-10 12:38:33 -0500
+Processing by ActsController#new as HTML
+  Rendered acts/_form.html.haml (2.9ms)
+  Rendered acts/new.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:38:33 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:38:33 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:38:33 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:38:33 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/acts" for 127.0.0.1 at 2014-01-10 12:38:39 -0500
+Processing by ActsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z4U692rh5WC75iKHUEI1/1txJvO8lb05Yn7Kyr8UtdY=", "act"=>{"name"=>"floosiess"}, "commit"=>"Make It"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "acts" ("created_at", "date_time", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Fri, 10 Jan 2014 17:38:39 UTC +00:00], ["date_time", nil], ["name", "floosiess"], ["updated_at", Fri, 10 Jan 2014 17:38:39 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/acts/2
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/acts/2" for 127.0.0.1 at 2014-01-10 12:38:39 -0500
+Processing by ActsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered acts/show.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:38:39 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:38:39 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:38:39 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:38:39 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts" for 127.0.0.1 at 2014-01-10 12:38:41 -0500
+Processing by ActsController#index as HTML
+  [1m[36mAct Load (0.2ms)[0m  [1mSELECT "acts".* FROM "acts" [0m
+  Rendered acts/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 12:38:41 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 12:38:41 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 12:38:41 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 12:38:41 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)

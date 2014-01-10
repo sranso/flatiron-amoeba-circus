@@ -1,0 +1,14 @@
+%h1 All the Acts
+
+%table
+  %tr
+    %th Name
+
+  - @acts.each do |act|
+    %tr
+      %td= act.name
+      %td= link_to 'Show', act
+
+%br
+
+= link_to 'New Act', new_act_path

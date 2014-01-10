@@ -1,4 +1,5 @@
 App::Application.routes.draw do
+  resources :acts
   resources :amoebas
   match 'amoebas/split/:baby_maker' => 'amoebas#split'
   # The priority is based upon order of creation:
