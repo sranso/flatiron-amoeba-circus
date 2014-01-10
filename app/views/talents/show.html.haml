@@ -2,5 +2,8 @@
 
 %p
   %b= @talent.name
+%p
+  - @talent.amoebas.each do |amoeba|
+    %p= link_to "#{amoeba.name}", amoeba
 
 = link_to 'Back', talents_path

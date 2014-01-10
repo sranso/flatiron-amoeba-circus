@@ -6,5 +6,12 @@
 %p
   %b Date and Time:
   = @act.date_time
+%p
+  %b Performers:
+  %br
+  - @act.amoebas.each do |amoeba|
+    = link_to "#{amoeba.name}", amoeba
+    %br
+
 
 = link_to 'Back', acts_path
