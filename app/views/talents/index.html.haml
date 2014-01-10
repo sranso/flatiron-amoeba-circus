@@ -1,0 +1,12 @@
+%h1 All the Talents
+
+%table
+  %tr
+    %th Name
+
+  - @talents.each do |talent|
+    %tr
+      %td= talent.name
+      %td= link_to 'Show', "/talents/#{talent.id}"
+
+%br

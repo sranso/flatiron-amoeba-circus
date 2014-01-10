@@ -1,18 +1,21 @@
 %h1 The Amoeba you split is now dead.
 %h2 But two more were born in its place.
 
+%table
+  %tr
+    %th Name
+    %th Act
+    %th Talent
+    %th Generation
+
 - @split_amoeba.each do |baby|
-  %p
-    %b Name:
-    = baby.name
-  %p
-    %b Act:
-    = Act.find(baby.act_id).name
-  %p
-    %b Talent:
-    = Talent.find(baby.talent_id).name
-  %p
-    %b Generation:
-    = baby.gen_num
+  %tr
+    %td= baby.name
+    %td= Act.find(baby.act_id).name
+    %td= Talent.find(baby.talent_id).name
+    %td= baby.gen_num
+  %br
+
+%br
 
 = link_to 'All Amoebas', amoebas_path

@@ -9,13 +9,12 @@
 
   - @amoebas.each do |amoeba|
     %tr
-      %td= amoeba.name
-      %td= Act.find(amoeba.act_id).name
-      %td= Talent.find(amoeba.talent_id).name
+      %td= link_to "#{amoeba.name}", amoeba
+      %td= link_to "#{Act.find(amoeba.act_id).name}", "acts/#{amoeba.act_id}"
+      %td= link_to "#{Talent.find(amoeba.talent_id).name}", "talents/#{amoeba.talent_id}"
       %td= amoeba.gen_num
-      %td= link_to 'Show', amoeba
       %td= button_to 'Split', "/amoebas/split/#{amoeba.id}", :method => :split, :data => { :confirm => 'You sure?'}
 
 %br
 
-= link_to 'New Amoeba', new_amoeba_path
+= button_to 'New Amoeba', new_amoeba_path
