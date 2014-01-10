@@ -10679,3 +10679,1605 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:10:59 -0500
 Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas" for 127.0.0.1 at 2014-01-10 16:13:57 -0500
+Processing by AmoebasController#index as HTML
+  [1m[35mAmoeba Load (0.3ms)[0m  SELECT "amoebas".* FROM "amoebas" 
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered amoebas/index.html.haml within layouts/application (18.0ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:13:57 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:13:57 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:13:57 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:13:57 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas" for 127.0.0.1 at 2014-01-10 16:15:11 -0500
+Processing by AmoebasController#index as HTML
+  [1m[36mAmoeba Load (0.2ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" [0m
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered amoebas/index.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:15:11 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:15:11 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:15:11 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:15:11 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas" for 127.0.0.1 at 2014-01-10 16:15:49 -0500
+Processing by AmoebasController#index as HTML
+  [1m[35mAmoeba Load (0.2ms)[0m  SELECT "amoebas".* FROM "amoebas" 
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered amoebas/index.html.haml within layouts/application (17.9ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:15:49 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:15:49 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:15:49 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:15:49 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas/1" for 127.0.0.1 at 2014-01-10 16:16:31 -0500
+Processing by AmoebasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAmoeba Load (0.1ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mAct Load (0.3ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered amoebas/show.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:16:31 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas/bootstrap/css/bootstrap.css" for 127.0.0.1 at 2014-01-10 16:16:31 -0500
+
+ActionController::RoutingError (No route matches [GET] "/amoebas/bootstrap/css/bootstrap.css"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/sarahransohoff/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/sarahransohoff/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/sarahransohoff/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:16:31 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:16:31 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:16:31 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas/1" for 127.0.0.1 at 2014-01-10 16:16:37 -0500
+Processing by AmoebasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAmoeba Load (0.1ms)[0m  SELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mAct Load (0.2ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered amoebas/show.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:16:37 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:16:37 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:16:37 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:16:37 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts" for 127.0.0.1 at 2014-01-10 16:18:15 -0500
+Processing by ActsController#index as HTML
+  [1m[36mAct Load (0.2ms)[0m  [1mSELECT "acts".* FROM "acts" [0m
+  Rendered acts/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:18:15 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:18:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:18:15 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:18:15 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/talents/2" for 127.0.0.1 at 2014-01-10 16:18:48 -0500
+Processing by TalentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTalent Load (0.2ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mAmoeba Load (0.2ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."talent_id" = 2[0m
+  Rendered talents/show.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:18:48 -0500
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:18:48 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:18:48 -0500
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:18:48 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/talents/2" for 127.0.0.1 at 2014-01-10 16:20:35 -0500
+Processing by TalentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered talents/show.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (There's no Ruby code for = to evaluate.):
+    1: %h1= @talent.name
+    2: 
+    3: %p
+    4:   %b= 
+    5: %p
+    6:   - @talent.amoebas.each do |amoeba|
+    7:     %p= link_to "#{amoeba.name}", amoeba
+  app/views/talents/show.html.haml:4
+
+
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.4ms)
+
+
+Started GET "/talents/2" for 127.0.0.1 at 2014-01-10 16:20:40 -0500
+Processing by TalentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTalent Load (0.2ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mAmoeba Load (0.2ms)[0m  SELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."talent_id" = 2
+  Rendered talents/show.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:20:40 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:20:40 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:20:40 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:20:40 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/talents/2" for 127.0.0.1 at 2014-01-10 16:20:53 -0500
+Processing by TalentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mAmoeba Load (0.2ms)[0m  SELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."talent_id" = 2
+  Rendered talents/show.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:20:53 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:20:53 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:20:53 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:20:53 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/talents/2" for 127.0.0.1 at 2014-01-10 16:20:57 -0500
+Processing by TalentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mAmoeba Load (0.2ms)[0m  SELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."talent_id" = 2
+  Rendered talents/show.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:20:58 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:20:58 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:20:58 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:20:58 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas/1" for 127.0.0.1 at 2014-01-10 16:21:24 -0500
+Processing by AmoebasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAmoeba Load (0.1ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered amoebas/show.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:21:24 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:21:24 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:21:24 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:21:24 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts/1" for 127.0.0.1 at 2014-01-10 16:21:32 -0500
+Processing by ActsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mAmoeba Load (0.2ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."act_id" = 1[0m
+  Rendered acts/show.html.haml within layouts/application (63.5ms)
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:21:32 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:21:32 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:21:32 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:21:32 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts/1" for 127.0.0.1 at 2014-01-10 16:21:41 -0500
+Processing by ActsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mAmoeba Load (0.3ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."act_id" = 1[0m
+  Rendered acts/show.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:21:41 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:21:41 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:21:41 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:21:41 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/acts/1" for 127.0.0.1 at 2014-01-10 16:21:49 -0500
+Processing by ActsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mAmoeba Load (0.1ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."act_id" = 1[0m
+  Rendered acts/show.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:21:50 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:21:50 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:21:50 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:21:50 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts/1" for 127.0.0.1 at 2014-01-10 16:22:17 -0500
+Processing by ActsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mAmoeba Load (0.2ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."act_id" = 1[0m
+  Rendered acts/show.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:22:17 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:17 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:17 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:17 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/talents/2" for 127.0.0.1 at 2014-01-10 16:22:26 -0500
+Processing by TalentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mAmoeba Load (0.1ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."talent_id" = 2[0m
+  Rendered talents/show.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:22:26 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:26 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:26 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/talents/2" for 127.0.0.1 at 2014-01-10 16:22:27 -0500
+Processing by TalentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mAmoeba Load (0.2ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."talent_id" = 2[0m
+  Rendered talents/show.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:22:27 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:27 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:27 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:27 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/talents/2" for 127.0.0.1 at 2014-01-10 16:22:30 -0500
+Processing by TalentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTalent Load (0.2ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mAmoeba Load (0.2ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."talent_id" = 2[0m
+  Rendered talents/show.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:30 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:30 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:22:30 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:30 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas/1" for 127.0.0.1 at 2014-01-10 16:22:31 -0500
+Processing by AmoebasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAmoeba Load (0.2ms)[0m  SELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered amoebas/show.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:22:31 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:31 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:31 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:31 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas" for 127.0.0.1 at 2014-01-10 16:22:35 -0500
+Processing by AmoebasController#index as HTML
+  [1m[36mAmoeba Load (0.2ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" [0m
+  [1m[35mAct Load (0.2ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTalent Load (0.2ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAct Load (0.2ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered amoebas/index.html.haml within layouts/application (20.6ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:22:35 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:35 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:35 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:35 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/talents/2" for 127.0.0.1 at 2014-01-10 16:22:56 -0500
+Processing by TalentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mAmoeba Load (0.2ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."talent_id" = 2[0m
+  Rendered talents/show.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:56 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:56 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:22:56 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:22:56 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/talents/2" for 127.0.0.1 at 2014-01-10 16:23:00 -0500
+Processing by TalentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mAmoeba Load (0.2ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."talent_id" = 2[0m
+  Rendered talents/show.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:23:00 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:23:00 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:23:00 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:23:00 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/talents/2" for 127.0.0.1 at 2014-01-10 16:23:24 -0500
+Processing by TalentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTalent Load (0.2ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mAmoeba Load (0.2ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."talent_id" = 2[0m
+  Rendered talents/show.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:23:24 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:23:24 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:23:24 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:23:24 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/talents" for 127.0.0.1 at 2014-01-10 16:23:28 -0500
+Processing by TalentsController#index as HTML
+  [1m[35mTalent Load (0.3ms)[0m  SELECT "talents".* FROM "talents" 
+  Rendered talents/index.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:23:28 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:23:28 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:23:28 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:23:28 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/talents/2" for 127.0.0.1 at 2014-01-10 16:23:59 -0500
+Processing by TalentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mAmoeba Load (0.1ms)[0m  SELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."talent_id" = 2
+  Rendered talents/show.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:23:59 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:23:59 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:23:59 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:23:59 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas" for 127.0.0.1 at 2014-01-10 16:24:02 -0500
+Processing by AmoebasController#index as HTML
+  [1m[36mAmoeba Load (0.2ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" [0m
+  [1m[35mAct Load (0.3ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered amoebas/index.html.haml within layouts/application (19.6ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:24:02 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:24:02 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:24:02 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:24:02 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas" for 127.0.0.1 at 2014-01-10 16:24:27 -0500
+Processing by AmoebasController#index as HTML
+  [1m[35mAmoeba Load (0.2ms)[0m  SELECT "amoebas".* FROM "amoebas" 
+ERROR: compiling _app_views_amoebas_index_html_haml___587859285425028079_70167536563720 RAISED /Users/sarahransohoff/FIProjects/amoeba-circus/app/views/amoebas/index.html.haml:16: syntax error, unexpected '.'
+..._false_true_false_true_false((.btn button_to 'Split', "/amoe...
+...                               ^
+Function body:           def _app_views_amoebas_index_html_haml___587859285425028079_70167536563720(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "amoebas/index";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(haml_buffer, {:autoclose=>["area", "base", "basefont", "br", "col", "command", "embed", "frame", "hr", "img", "input", "isindex", "keygen", "link", "menuitem", "meta", "param", "source", "track", "wbr"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true, :hyphenate_data_attrs=>true, :cdata=>false});_erbout = _hamlout.buffer;@output_buffer = output_buffer ||= ActionView::OutputBuffer.new rescue nil;;_hamlout.push_text("<h1>All the Amoebas</h1>\n<table>\n  <tr>\n    <th>Name</th>\n    <th>Act</th>\n    <th>Talent</th>\n    <th>Generation</th>\n  </tr>\n", 1, false);
+
+
+
+
+
+
+
+
+ @amoebas.each do |amoeba|
+_hamlout.push_text("  <tr>\n    <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false((link_to "#{amoeba.name}", amoeba
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "#{Act.find(amoeba.act_id).name}", "acts/#{amoeba.act_id}"
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "#{Talent.find(amoeba.talent_id).name}", "talents/#{amoeba.talent_id}"
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((amoeba.gen_num
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((.btn button_to 'Split', "/amoebas/split/#{amoeba.id}", :method => :split, :data => { :confirm => 'You sure?'}
+));}</td>\n  </tr>\n", -1, false);end;_hamlout.push_text("</table>\n<br>\n#{_hamlout.adjust_tabs(-1); 
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( button_to 'New Amoeba', new_amoeba_path
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/template.rb:297:in `module_eval'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/template.rb:297:in `compile'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/template.rb:244:in `block in compile!'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/template.rb:232:in `synchronize'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/template.rb:232:in `compile!'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/template.rb:144:in `block in render'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/notifications.rb:125:in `instrument'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/template.rb:143:in `render'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:48:in `block (2 levels) in render_template'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `instrument'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:47:in `block in render_template'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:55:in `render_with_layout'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:19:in `render'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/sarahransohoff/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.14/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:414:in `_run__2881055453072806808__process_action__204621696068848340__callbacks'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `instrument'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.14/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/abstract_controller/base.rb:121:in `process'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_controller/metal.rb:246:in `block in action'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:608:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.14/lib/active_record/query_cache.rb:64:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-3.2.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `_run__2332961802930816069__call__4114461230962955656__callbacks'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.14/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-3.2.14/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.14/lib/rails/engine.rb:484:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.14/lib/rails/application.rb:231:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/railties-3.2.14/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/sarahransohoff/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/sarahransohoff/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/sarahransohoff/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered amoebas/index.html.haml within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (/Users/sarahransohoff/FIProjects/amoeba-circus/app/views/amoebas/index.html.haml:16: syntax error, unexpected '.'
+..._false_true_false_true_false((.btn button_to 'Split', "/amoe...
+...                               ^):
+    13:       %td= link_to "#{Act.find(amoeba.act_id).name}", "acts/#{amoeba.act_id}"
+    14:       %td= link_to "#{Talent.find(amoeba.talent_id).name}", "talents/#{amoeba.talent_id}"
+    15:       %td= amoeba.gen_num
+    16:       %td=.btn button_to 'Split', "/amoebas/split/#{amoeba.id}", :method => :split, :data => { :confirm => 'You sure?'}
+    17: 
+    18: %br
+    19: 
+  actionpack (3.2.14) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.14) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.14) lib/action_view/template.rb:244:in `block in compile!'
+  actionpack (3.2.14) lib/action_view/template.rb:232:in `synchronize'
+  actionpack (3.2.14) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.14) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.14) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.14) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:48:in `block (2 levels) in render_template'
+  actionpack (3.2.14) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.14) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:47:in `block in render_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:55:in `render_with_layout'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:19:in `render'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.14) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/sarahransohoff/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.14) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:414:in `_run__2881055453072806808__process_action__204621696068848340__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.14) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.14) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.14) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.14) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `_run__2332961802930816069__call__4114461230962955656__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/sarahransohoff/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/sarahransohoff/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/sarahransohoff/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/amoebas" for 127.0.0.1 at 2014-01-10 16:24:38 -0500
+Processing by AmoebasController#index as HTML
+  [1m[36mAmoeba Load (0.2ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" [0m
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered amoebas/index.html.haml within layouts/application (19.1ms)
+Completed 200 OK in 75ms (Views: 72.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:24:38 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:24:38 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:24:38 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:24:38 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas" for 127.0.0.1 at 2014-01-10 16:24:48 -0500
+Processing by AmoebasController#index as HTML
+  [1m[35mAmoeba Load (0.2ms)[0m  SELECT "amoebas".* FROM "amoebas" 
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered amoebas/index.html.haml within layouts/application (16.5ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:24:48 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:24:48 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:24:48 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:24:48 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/amoebas/split/1" for 127.0.0.1 at 2014-01-10 16:25:17 -0500
+Processing by AmoebasController#split as HTML
+  Parameters: {"authenticity_token"=>"z4U692rh5WC75iKHUEI1/1txJvO8lb05Yn7Kyr8UtdY=", "baby_maker"=>"1"}
+  [1m[36mAmoeba Load (0.1ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "amoebas" ("act_id", "created_at", "gen_num", "name", "talent_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["act_id", 1], ["created_at", Fri, 10 Jan 2014 21:25:17 UTC +00:00], ["gen_num", 2], ["name", "Skared"], ["talent_id", 2], ["updated_at", Fri, 10 Jan 2014 21:25:17 UTC +00:00]]
+  [1m[35m (7.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "amoebas" ("act_id", "created_at", "gen_num", "name", "talent_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["act_id", 1], ["created_at", Fri, 10 Jan 2014 21:25:17 UTC +00:00], ["gen_num", 2], ["name", "Steady Hands"], ["talent_id", 2], ["updated_at", Fri, 10 Jan 2014 21:25:17 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "amoebas" WHERE "amoebas"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mAct Load (0.2ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered amoebas/split.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 25ms (Views: 8.2ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:25:17 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:25:17 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:25:17 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:25:17 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/amoebas/split/1" for 127.0.0.1 at 2014-01-10 16:25:28 -0500
+Processing by AmoebasController#split as HTML
+  Parameters: {"authenticity_token"=>"z4U692rh5WC75iKHUEI1/1txJvO8lb05Yn7Kyr8UtdY=", "baby_maker"=>"1"}
+  [1m[36mAmoeba Load (0.1ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Amoeba with id=1):
+  app/controllers/amoebas_controller.rb:22:in `split'
+
+
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/sarahransohoff/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.9ms)
+
+
+Started POST "/amoebas/split/5" for 127.0.0.1 at 2014-01-10 16:26:25 -0500
+Processing by AmoebasController#split as HTML
+  Parameters: {"authenticity_token"=>"z4U692rh5WC75iKHUEI1/1txJvO8lb05Yn7Kyr8UtdY=", "baby_maker"=>"5"}
+  [1m[35mAmoeba Load (0.1ms)[0m  SELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "amoebas" ("act_id", "created_at", "gen_num", "name", "talent_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["act_id", 2], ["created_at", Fri, 10 Jan 2014 21:26:25 UTC +00:00], ["gen_num", 2], ["name", "Beyonce"], ["talent_id", 5], ["updated_at", Fri, 10 Jan 2014 21:26:25 UTC +00:00]]
+  [1m[36m (7.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "amoebas" ("act_id", "created_at", "gen_num", "name", "talent_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["act_id", 2], ["created_at", Fri, 10 Jan 2014 21:26:25 UTC +00:00], ["gen_num", 2], ["name", "InLove"], ["talent_id", 5], ["updated_at", Fri, 10 Jan 2014 21:26:25 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "amoebas" WHERE "amoebas"."id" = ?  [["id", 5]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered amoebas/split.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 27ms (Views: 8.7ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:26:25 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:26:25 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:26:25 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:26:25 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas/16" for 127.0.0.1 at 2014-01-10 16:26:29 -0500
+Processing by AmoebasController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mAmoeba Load (0.1ms)[0m  SELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."id" = ? LIMIT 1  [["id", "16"]]
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered amoebas/show.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:26:29 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:26:29 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:26:29 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:26:29 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts/2" for 127.0.0.1 at 2014-01-10 16:26:33 -0500
+Processing by ActsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mAmoeba Load (0.2ms)[0m  SELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."act_id" = 2
+  Rendered acts/show.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:26:33 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:26:33 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:26:33 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:26:33 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/talents/5" for 127.0.0.1 at 2014-01-10 16:26:39 -0500
+Processing by TalentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTalent Load (0.2ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mAmoeba Load (0.2ms)[0m  SELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."talent_id" = 5
+  Rendered talents/show.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:26:39 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:26:39 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:26:39 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:26:39 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/acts/2" for 127.0.0.1 at 2014-01-10 16:26:49 -0500
+Processing by ActsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAct Load (0.2ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mAmoeba Load (0.2ms)[0m  SELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."act_id" = 2
+  Rendered acts/show.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:26:49 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:26:49 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:26:49 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:26:49 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/talents/2" for 127.0.0.1 at 2014-01-10 16:27:04 -0500
+Processing by TalentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTalent Load (0.3ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mAmoeba Load (0.2ms)[0m  SELECT "amoebas".* FROM "amoebas" WHERE "amoebas"."talent_id" = 2
+  Rendered talents/show.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:04 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:27:04 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:04 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:04 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/talents" for 127.0.0.1 at 2014-01-10 16:27:12 -0500
+Processing by TalentsController#index as HTML
+  [1m[36mTalent Load (0.2ms)[0m  [1mSELECT "talents".* FROM "talents" [0m
+  Rendered talents/index.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:27:12 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:12 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:12 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:12 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/talents" for 127.0.0.1 at 2014-01-10 16:27:28 -0500
+Processing by TalentsController#index as HTML
+  [1m[35mTalent Load (0.3ms)[0m  SELECT "talents".* FROM "talents" 
+  Rendered talents/index.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:27:28 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:28 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:28 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:28 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/talents" for 127.0.0.1 at 2014-01-10 16:27:35 -0500
+Processing by TalentsController#index as HTML
+  [1m[36mTalent Load (0.2ms)[0m  [1mSELECT "talents".* FROM "talents" [0m
+  Rendered talents/index.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:35 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:35 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:27:35 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:35 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas" for 127.0.0.1 at 2014-01-10 16:27:36 -0500
+Processing by AmoebasController#index as HTML
+  [1m[35mAmoeba Load (0.3ms)[0m  SELECT "amoebas".* FROM "amoebas" 
+  [1m[36mAct Load (0.2ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered amoebas/index.html.haml within layouts/application (17.5ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:36 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:36 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:27:36 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:36 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas" for 127.0.0.1 at 2014-01-10 16:27:51 -0500
+Processing by AmoebasController#index as HTML
+  [1m[36mAmoeba Load (0.2ms)[0m  [1mSELECT "amoebas".* FROM "amoebas" [0m
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mAct Load (0.1ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mTalent Load (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mTalent Load (0.1ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered amoebas/index.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:51 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:51 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:27:51 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:27:51 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/amoebas" for 127.0.0.1 at 2014-01-10 16:32:28 -0500
+Processing by AmoebasController#index as HTML
+  [1m[35mAmoeba Load (0.2ms)[0m  SELECT "amoebas".* FROM "amoebas" 
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mAct Load (0.1ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mTalent Load (0.1ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "acts".* FROM "acts" WHERE "acts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "talents".* FROM "talents" WHERE "talents"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered amoebas/index.html.haml within layouts/application (17.2ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-10 16:32:28 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-10 16:32:28 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-10 16:32:28 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-10 16:32:28 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)

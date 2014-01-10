@@ -1,8 +1,5 @@
-%h1 This Amoeba
+%h1= @amoeba.name
 
-%p
-  %b Name:
-  = @amoeba.name
 %p
   %b Act:
   = link_to Act.find(@amoeba.act_id).name, "/acts/#{@amoeba.act_id}"
@@ -14,4 +11,4 @@
   = @amoeba.gen_num
 
 = button_to 'Split Amoeba', "/amoebas/split/#{@amoeba.id}", :method => :split, :data => { :confirm => 'You sure?' }
-= link_to 'Back', amoebas_path
+.btn= link_to 'Back', amoebas_path

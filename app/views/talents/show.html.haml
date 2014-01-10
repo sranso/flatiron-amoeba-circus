@@ -1,9 +1,9 @@
-%h1 This Talent
+%h1= @talent.name
 
-%p
-  %b= @talent.name
+%b Amoebas with this talent:
 %p
   - @talent.amoebas.each do |amoeba|
     %p= link_to "#{amoeba.name}", amoeba
 
-= link_to 'Back', talents_path
+.btn= link_to 'All Talents', talents_path
+.btn= link_to 'All Amoebas', amoebas_path

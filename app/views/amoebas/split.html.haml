@@ -10,9 +10,9 @@
 
 - @split_amoeba.each do |baby|
   %tr
-    %td= baby.name
-    %td= Act.find(baby.act_id).name
-    %td= Talent.find(baby.talent_id).name
+    %td= link_to baby.name, baby
+    %td= link_to Act.find(baby.act_id).name, "/acts/#{baby.act_id}"
+    %td= link_to Talent.find(baby.talent_id).name, "/talents/#{baby.talent_id}"
     %td= baby.gen_num
   %br
 

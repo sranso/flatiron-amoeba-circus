@@ -1,10 +1,7 @@
-%h1 This Act
+%h1= @act.name
 
 %p
-  %b Name:
-  = @act.name
-%p
-  %b Date and Time:
+  %b Date and Time of performance:
   = @act.date_time
 %p
   %b Performers:
@@ -14,4 +11,4 @@
     %br
 
 
-= link_to 'Back', acts_path
+.btn= link_to 'Back', acts_path
