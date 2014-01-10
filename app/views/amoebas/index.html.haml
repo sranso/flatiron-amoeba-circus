@@ -10,8 +10,8 @@
   - @amoebas.each do |amoeba|
     %tr
       %td= amoeba.name
-      %td= amoeba.act_id
-      %td= amoeba.talent_id
+      %td= Act.find(amoeba.act_id).name
+      %td= Talent.find(amoeba.talent_id).name
       %td= amoeba.gen_num
       %td= link_to 'Show', amoeba
       %td= button_to 'Split', "/amoebas/split/#{amoeba.id}", :method => :split, :data => { :confirm => 'You sure?'}
