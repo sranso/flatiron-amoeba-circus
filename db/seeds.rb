@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Talent.create([{:name=>"Acrobat"}, {:name=>"Contortionist"}, {:name=>"Clown"}, {:name=>"Juggler"}, {:name=>"Freak"}])
+
+Act.create()
+
+Amoeba.create()

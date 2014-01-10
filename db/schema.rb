@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140109204800) do
+ActiveRecord::Schema.define(:version => 20140109220612) do
 
   create_table "acts", :force => true do |t|
     t.string   "name"
@@ -22,11 +22,11 @@ ActiveRecord::Schema.define(:version => 20140109204800) do
 
   create_table "amoebas", :force => true do |t|
     t.string   "name"
-    t.integer  "generation_num"
+    t.integer  "generation_num", :default => 1
     t.integer  "talent_id"
     t.integer  "act_id"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
   end
 
   create_table "talents", :force => true do |t|

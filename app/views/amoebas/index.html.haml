@@ -4,12 +4,14 @@
     %th Name
     %th Act
     %th Talent
+    %th Generation
 
   - @amoebas.each do |amoeba|
     %tr
       %td= amoeba.name
       %td= amoeba.act_id
       %td= amoeba.talent_id
+      %td= amoeba.generation_num
 
 %br
 = link_to 'New Amoeba', new_amoeba_path
