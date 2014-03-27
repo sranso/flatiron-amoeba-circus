@@ -8,8 +8,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="/amoebas">Amoeba Circus</a>
+      <ul class="nav">
+        <li class="active">
+          <a href="/amoebas">Amoebas</a>
+        </li>
+        <li>
+          <a href="/acts">Acts</a>
+        </li>
+        <li>
+          <a href="/talents">Talents</a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <div class="container">
     <%= yield %>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
